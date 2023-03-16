@@ -1,0 +1,23 @@
+
+<!-- Realizar programa donde el usuario introduce números y la computadora responde sacando por pantalla los mismos números
+     hasta que el introducido es el número 7.
+ -->
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Numero 7</title>
+  </head>
+  <body>
+    <script>
+        // Pedimos al usuario que introduzca numeros
+       do{
+            numero = window.prompt("Introduce el numero:", "");
+            numero = Number(numero);
+            if(numero!=7)
+            {
+               document.write(`<br/>${numero}`);
+            }
+       }while(numero!=7)
+    </script>
+  </body>
+</html>

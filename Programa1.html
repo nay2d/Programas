@@ -1,0 +1,33 @@
+<!-- Realizar programa donde el usuario introduce 2 números y el ordenador responde sacando por pantalla la suma, resta, 
+    multiplicación y división de ambos números
+ -->
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Numeros y operaciones </title>
+  </head>
+  <body>
+    <script>
+        // Pedimos al usuario que introduzca dos números
+        let numero1 = prompt("Introduce el 1er numero:");
+        let numero2 = prompt("Introduce el 2do numero:");
+
+        // Convertimos los números introducidos de tipo string a tipo number
+        numero1 = Number(numero1);
+        numero2 = Number(numero2);
+
+        // Realizamos las operaciones aritméticas y las guardamos en variables
+        let suma = numero1 + numero2;
+        let resta = numero1 - numero2;
+        let multiplicacion = numero1 * numero2;
+        let division = numero1 / numero2;
+
+        // Mostramos los resultados por pantalla
+        document.write(`Tus numeros son:  ${numero1} y ${numero2}`);
+        document.write(`<br/><br/>La suma de los numeros es:  ${suma}`);
+        document.write(`<br/>La resta de los numeros es: ${resta}`);
+        document.write(`<br/>La multiplicacion de los numeros es: ${multiplicacion}`);
+        document.write(`<br/>La division de los numeros es: ${division}`);
+    </script>
+  </body>
+</html>

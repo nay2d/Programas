@@ -1,0 +1,36 @@
+<!-- Programa que lee tres notas de un alumno, calcula la media e indicar el valor de la nota y la palabra “Excelente” 
+  si tiene un valor mayor que 8 , “Aprobado” entre 5 y 8 , “Suspendido” < 5
+ -->
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Notas de los alumnos</title>
+  </head>
+  <body>
+    <script>
+        // Pedimos al usuario que introduzca las tres notas de un alumno
+        let nota1 = prompt("Introduce la 1er nota:");
+        let nota2 = prompt("Introduce la 2da nota:");
+        let nota3 = prompt("Introduce la 3er nota:");
+
+        // Convertimos los números introducidos de tipo string a tipo number
+        nota1 = Number(nota1);
+        nota2 = Number(nota2);
+        nota3 = Number(nota3);
+
+        // Calculamos la media
+        let media = nota1 + nota2 + nota3;
+        let mediaf = media / 3;
+
+        // Mostramos los resultados por pantalla
+        if(mediaf>8)
+        {
+          document.write(`Excelente, sacaste de calificación: ${mediaf}`); 
+        } if (mediaf<=8 && mediaf>=5) {
+          document.write(`Aprobaste, sacaste de calificación: ${mediaf}`); 
+        } if (mediaf<5){
+          document.write(`Suspendido, sacaste de calificación: ${mediaf}`); 
+        }
+    </script>
+  </body>
+</html>
